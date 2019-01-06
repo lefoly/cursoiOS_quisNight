@@ -2,7 +2,7 @@
 //  BotaoComBorda.swift
 //  quizNight
 //
-//  Created by Leandro Foly on 03/01/2019.
+//  Created by Leandro Foly on 06/01/2019.
 //  Copyright © 2019 Leandro Foly. All rights reserved.
 //
 
@@ -15,5 +15,4 @@ class BotaoComBorda: UIButton {
         layer.borderWidth = 3.0
         layer.borderColor = UIColor.red.cgColor
     }
-
 }

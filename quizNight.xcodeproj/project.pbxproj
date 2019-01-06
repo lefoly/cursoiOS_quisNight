@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186A756321E1A14900A92F9C /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A756221E1A14900A92F9C /* BotaoComBorda.swift */; };
 		18F474E421DEA68800A1BCEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F474E321DEA68800A1BCEF /* AppDelegate.swift */; };
 		18F474E621DEA68800A1BCEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F474E521DEA68800A1BCEF /* ViewController.swift */; };
 		18F474E921DEA68800A1BCEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F474E721DEA68800A1BCEF /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		18F474EE21DEA68A00A1BCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F474EC21DEA68A00A1BCEF /* LaunchScreen.storyboard */; };
 		18F474F921DEA68A00A1BCEF /* quizNightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F474F821DEA68A00A1BCEF /* quizNightTests.swift */; };
 		18F4750421DEA68A00A1BCEF /* quizNightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4750321DEA68A00A1BCEF /* quizNightUITests.swift */; };
-		18F4751221DEADB700A1BCEF /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4751121DEADB700A1BCEF /* BotaoComBorda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186A756221E1A14900A92F9C /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
 		18F474E021DEA68800A1BCEF /* quizNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F474E321DEA68800A1BCEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F474E521DEA68800A1BCEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		18F474FF21DEA68A00A1BCEF /* quizNightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quizNightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F4750321DEA68A00A1BCEF /* quizNightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizNightUITests.swift; sourceTree = "<group>"; };
 		18F4750521DEA68A00A1BCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18F4751121DEADB700A1BCEF /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				18F474EA21DEA68A00A1BCEF /* Assets.xcassets */,
 				18F474EC21DEA68A00A1BCEF /* LaunchScreen.storyboard */,
 				18F474EF21DEA68A00A1BCEF /* Info.plist */,
-				18F4751121DEADB700A1BCEF /* BotaoComBorda.swift */,
+				186A756221E1A14900A92F9C /* BotaoComBorda.swift */,
 			);
 			path = quizNight;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F4751221DEADB700A1BCEF /* BotaoComBorda.swift in Sources */,
+				186A756321E1A14900A92F9C /* BotaoComBorda.swift in Sources */,
 				18F474E621DEA68800A1BCEF /* ViewController.swift in Sources */,
 				18F474E421DEA68800A1BCEF /* AppDelegate.swift in Sources */,
 			);
