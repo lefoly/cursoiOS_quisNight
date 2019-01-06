@@ -12,7 +12,8 @@ class BotaoComBorda: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.borderWidth = 3.0
-        layer.borderColor = UIColor.red.cgColor
+        layer.borderWidth = 1.5
+        layer.borderColor = UIColor.white.cgColor
+        layer.cornerRadius = 5
     }
 }
