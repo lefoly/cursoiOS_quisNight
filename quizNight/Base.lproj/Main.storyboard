@@ -1,11 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="USz-ER-wRM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kEl-dG-GlJ">
+            <objects>
+                <viewController id="USz-ER-wRM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2a-p9-grg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="tWX-TS-AXI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-xo-KBu" userLabel="retangulo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-8u-x8i">
+                                        <rect key="frame" x="87" y="50" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="7yc-qC-8uY"/>
+                                            <constraint firstAttribute="height" constant="128" id="JRR-27-twa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXt-5j-GhW">
+                                        <rect key="frame" x="62" y="314" width="276" height="108"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="108" id="srB-pr-v7K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="170-3H-g7s" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="661" width="398" height="67"/>
+                                        <color key="backgroundColor" red="0.13333333333333333" green="0.29019607843137257" blue="0.35294117647058826" alpha="0.60346060739436624" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="170-3H-g7s" secondAttribute="height" multiplier="398:67" id="Pxl-Sl-Tf1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="JOGAR">
+                                            <color key="titleColor" red="0.97647058819999999" green="0.98039215690000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eF-YI-mdF">
+                                        <rect key="frame" x="178.66666666666666" y="199" width="57" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.97647058823529409" green="0.98039215686274506" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70397777288732399" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lXt-5j-GhW" firstAttribute="leading" secondItem="f2a-xo-KBu" secondAttribute="leading" constant="62" id="7dJ-CP-ubO"/>
+                                    <constraint firstItem="170-3H-g7s" firstAttribute="leading" secondItem="f2a-xo-KBu" secondAttribute="leading" constant="8" id="ANx-gf-pcP"/>
+                                    <constraint firstAttribute="bottom" secondItem="170-3H-g7s" secondAttribute="bottom" constant="8" id="IMw-KI-1us"/>
+                                    <constraint firstItem="0eF-YI-mdF" firstAttribute="top" secondItem="fpr-8u-x8i" secondAttribute="bottom" constant="21" id="Ibs-KZ-aYM"/>
+                                    <constraint firstItem="fpr-8u-x8i" firstAttribute="top" secondItem="f2a-xo-KBu" secondAttribute="top" constant="50" id="M1U-r5-XwA"/>
+                                    <constraint firstItem="fpr-8u-x8i" firstAttribute="centerX" secondItem="f2a-xo-KBu" secondAttribute="centerX" id="NmL-W5-22t"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lXt-5j-GhW" secondAttribute="trailing" constant="20" symbolic="YES" id="ZE5-lB-mc1"/>
+                                    <constraint firstItem="lXt-5j-GhW" firstAttribute="centerY" secondItem="f2a-xo-KBu" secondAttribute="centerY" id="gws-5t-h84"/>
+                                    <constraint firstItem="0eF-YI-mdF" firstAttribute="centerX" secondItem="f2a-xo-KBu" secondAttribute="centerX" id="inr-eI-7KH"/>
+                                    <constraint firstAttribute="trailing" secondItem="170-3H-g7s" secondAttribute="trailing" constant="8" id="yLt-gW-l6q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tWX-TS-AXI" firstAttribute="centerY" secondItem="v2a-p9-grg" secondAttribute="centerY" id="34N-b3-EmO"/>
+                            <constraint firstItem="tWX-TS-AXI" firstAttribute="height" secondItem="v2a-p9-grg" secondAttribute="height" id="TcM-0m-ABk"/>
+                            <constraint firstItem="f2a-xo-KBu" firstAttribute="height" secondItem="tWX-TS-AXI" secondAttribute="height" id="TgV-7T-ACC"/>
+                            <constraint firstItem="f2a-xo-KBu" firstAttribute="width" secondItem="tWX-TS-AXI" secondAttribute="width" id="VaM-un-ORk"/>
+                            <constraint firstItem="tWX-TS-AXI" firstAttribute="centerX" secondItem="v2a-p9-grg" secondAttribute="centerX" id="XPE-3b-ma7"/>
+                            <constraint firstItem="f2a-xo-KBu" firstAttribute="centerY" secondItem="tWX-TS-AXI" secondAttribute="centerY" id="m1J-lf-nYP"/>
+                            <constraint firstItem="f2a-xo-KBu" firstAttribute="centerX" secondItem="tWX-TS-AXI" secondAttribute="centerX" id="oos-mr-kha"/>
+                            <constraint firstItem="tWX-TS-AXI" firstAttribute="width" secondItem="v2a-p9-grg" secondAttribute="width" id="y10-Rx-De6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mdP-TR-f4i"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jG-ZH-6OC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1024" height="682"/>
+        <image name="logo" width="426" height="307"/>
+    </resources>
 </document>
